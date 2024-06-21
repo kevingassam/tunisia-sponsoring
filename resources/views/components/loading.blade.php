@@ -1,0 +1,1 @@
+<img src="/icons/kOnzy.gif" alt="loading" height="15" width="15" srcset="" wire:loading>
