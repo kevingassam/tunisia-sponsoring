@@ -96,7 +96,7 @@
                             <a class="nav-link fw-medium" aria-current="page" href="#service">Services</a>
                         </li>
                         <li class="nav-item px-3 px-xl-4">
-                            <a class="nav-link fw-medium" aria-current="page" href="#destination">Destination</a>
+                            <a class="nav-link fw-medium" aria-current="page" href="#destination">Le top</a>
                         </li>
                         <li class="nav-item px-3 px-xl-4">
                             <a class="nav-link fw-medium" aria-current="page" href="#booking">Comment ?</a>
@@ -249,8 +249,10 @@
                 <div class="position-absolute start-100 bottom-0 translate-middle-x d-none d-xl-block ms-xl-n4"><img
                         src="/front/assets/img/dest/shape.svg" alt="destination" /></div>
                 <div class="mb-7 text-center">
-                    <h5 class="text-secondary">Top Selling </h5>
-                    <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">Top Destinations</h3>
+                    <h5 class="text-secondary">Meilleures ventes </h5>
+                    <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">
+                      Nos meilleures ventes
+                    </h3>
                 </div>
                 <div class="row">
                     <div class="col-md-4 mb-4">
@@ -320,39 +322,41 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="mb-4 text-start">
-                            <h5 class="text-secondary">Easy and Fast </h5>
-                            <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">Book your next trip
-                                in 3 easy steps</h3>
+                            <h5 class="text-secondary">
+                              Facile et rapide
+                             </h5>
+                            <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">
+                              Profitez d'une <b class="text-danger">Carte</b> sans  payer !
+                            </h3>
                         </div>
                         <div class="d-flex align-items-start mb-5">
-                            <div class="bg-primary me-sm-4 me-3 p-3" style="border-radius: 13px"> <img
-                                    src="/front/assets/img/steps/selection.svg" width="22" alt="steps" />
-                            </div>
-                            <div class="flex-1">
-                                <h5 class="text-secondary fw-bold fs-0">Choose Destination</h5>
-                                <p>Choose your favourite place. No matter <br class="d-none d-sm-block"> where you
-                                    travel inside the World.</p>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-start mb-5">
-                            <div class="bg-danger me-sm-4 me-3 p-3" style="border-radius: 13px"> <img
-                                    src="/front/assets/img/steps/water-sport.svg" width="22" alt="steps" />
-                            </div>
-                            <div class="flex-1">
-                                <h5 class="text-secondary fw-bold fs-0">Make Payment</h5>
-                                <p>After find your perfect spot, make your <br class="d-none d-sm-block"> payment and
-                                    get ready to travel.</p>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-start mb-5">
-                            <div class="bg-info me-sm-4 me-3 p-3" style="border-radius: 13px"> <img
-                                    src="/front/assets/img/steps/taxi.svg" width="22" alt="steps" /></div>
-                            <div class="flex-1">
-                                <h5 class="text-secondary fw-bold fs-0">Reach Airport on Selected Date</h5>
-                                <p>Lastly, you have to arrive at the airport <br class="d-none d-sm-block"> on time and
-                                    enjoy the vacation.</p>
-                            </div>
-                        </div>
+                          <div class="bg-primary me-sm-4 me-3 p-3" style="border-radius: 13px">
+                              <img src="/front/assets/img/steps/selection.svg" width="22" alt="steps" />
+                          </div>
+                          <div class="flex-1">
+                              <h5 class="text-secondary fw-bold fs-0">Choisissez un Service</h5>
+                              <p>Explorez notre gamme de services et <br class="d-none d-sm-block"> choisissez celui qui correspond le mieux à vos besoins.</p>
+                          </div>
+                      </div>
+                      <div class="d-flex align-items-start mb-5">
+                          <div class="bg-danger me-sm-4 me-3 p-3" style="border-radius: 13px">
+                              <img src="/front/assets/img/steps/water-sport.svg" width="22" alt="steps" />
+                          </div>
+                          <div class="flex-1">
+                              <h5 class="text-secondary fw-bold fs-0">Effectuez le Paiement</h5>
+                              <p>Après avoir sélectionné votre service, <br class="d-none d-sm-block"> procédez au paiement de manière physique.</p>
+                          </div>
+                      </div>
+                      <div class="d-flex align-items-start mb-5">
+                          <div class="bg-info me-sm-4 me-3 p-3" style="border-radius: 13px">
+                              <img src="/front/assets/img/steps/taxi.svg" width="22" alt="steps" />
+                          </div>
+                          <div class="flex-1">
+                              <h5 class="text-secondary fw-bold fs-0">Profitez de Votre Service</h5>
+                              <p>Une fois le paiement effectué, <br class="d-none d-sm-block"> bénéficiez de notre service de sponsoring et voyez les résultats.</p>
+                          </div>
+                      </div>
+                      
                     </div>
                     <div class="col-lg-6 d-flex justify-content-center align-items-start">
                         <div class="card position-relative shadow" style="max-width: 370px;">
@@ -423,9 +427,10 @@
                 <div class="row">
                     <div class="col-lg-5">
                         <div class="mb-8 text-start">
-                            <h5 class="text-secondary">Testimonials </h5>
-                            <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">What people say
-                                about Us.</h3>
+                            <h5 class="text-secondary">Témoignages </h5>
+                            <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">
+                              Que disent les gens à notre propos.
+                            </h3>
                         </div>
                     </div>
                     <div class="col-lg-1"></div>
@@ -514,44 +519,6 @@
         </section>
         <!-- <section> close ============================-->
         <!-- ============================================-->
-
-
-        <div class="position-relative pt-9 pt-lg-8 pb-6 pb-lg-8">
-            <div class="container">
-                <div class="row row-cols-lg-5 row-cols-md-3 row-cols-2 flex-center">
-                    <div class="col">
-                        <div class="card shadow-hover mb-4" style="border-radius:10px;">
-                            <div class="card-body text-center"> <img class="img-fluid"
-                                    src="/front/assets/img/partner/1.png" alt="" /></div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-hover mb-4" style="border-radius:10px;">
-                            <div class="card-body text-center"> <img class="img-fluid"
-                                    src="/front/assets/img/partner/2.png" alt="" /></div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-hover mb-4" style="border-radius:10px;">
-                            <div class="card-body text-center"> <img class="img-fluid"
-                                    src="/front/assets/img/partner/3.png" alt="" /></div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-hover mb-4" style="border-radius:10px;">
-                            <div class="card-body text-center"> <img class="img-fluid"
-                                    src="/front/assets/img/partner/4.png" alt="" /></div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-hover mb-4" style="border-radius:10px;">
-                            <div class="card-body text-center"> <img class="img-fluid"
-                                    src="/front/assets/img/partner/5.png" alt="" /></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
 
         <!-- ============================================-->
