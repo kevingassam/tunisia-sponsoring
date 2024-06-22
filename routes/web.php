@@ -31,15 +31,21 @@ Route::get('clear_cache', function () {
 });
 
 
-Route::get('/logout', [HomeController::class, 'logout'])->name('logout');
-Route::get('/', [HomeController::class, 'home'])->name('home');
-Route::get('/connexion', [HomeController::class, 'connexion'])->name('login');
+Route::get('/', function () {
+    return redirect('/fr');
+});
 
 
 
+Route::group(['prefix' => '{locale}', 'middleware' => 'setlocale'], function () {
 
+    Route::get('/logout', [HomeController::class, 'logout'])->name('logout');
+    Route::get('/', [HomeController::class, 'home'])->name('home');
+    Route::get('/connexion', [HomeController::class, 'connexion'])->name('login');
 
-Route::middleware(['role:admin','auth'])->group(function () {
+});
+
+Route::middleware(['role:admin', 'auth'])->group(function () {
     Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])->name('dashboard');
     Route::get('/admin/profile', [AdminController::class, 'profile'])->name('profile');
     Route::get('/admin/finances', [AdminController::class, 'finnaces'])->name('finnaces');

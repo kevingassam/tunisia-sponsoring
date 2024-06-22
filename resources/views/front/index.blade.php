@@ -16,10 +16,10 @@
     <!-- ===============================================-->
     <!--    Favicons-->
     <!-- ===============================================-->
-    <link rel="apple-touch-icon" sizes="180x180" href="/front/assets/img/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/front/assets/img/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/front/assets/img/favicons/favicon-16x16.png">
-    <link rel="shortcut icon" type="image/x-icon" href="/front/assets/img/favicons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="/icons/icon.png">
     <link rel="manifest" href="/front/assets/img/favicons/manifest.json">
     <meta name="msapplication-TileImage" content="/front/assets/img/favicons/mstile-150x150.png">
     <meta name="theme-color" content="#ffffff">
@@ -62,7 +62,7 @@
       <link rel="stylesheet" href="styles.css">
   
       <!-- Favicon -->
-      <link rel="icon" href="favicon.ico" type="image/x-icon">
+      <link rel="icon" href="/icons/icon.png" type="image/x-icon">
   
       <!-- Canonical Link -->
       <link rel="canonical" href="Tunisia-sponsoring.site">
@@ -78,16 +78,27 @@
     <!-- ===============================================-->
     <main class="main" id="top">
       <nav class="navbar navbar-expand-lg navbar-light fixed-top py-5 d-block" data-navbar-on-scroll="data-navbar-on-scroll">
-        <div class="container"><a class="navbar-brand" href="index.html"><img src="/front/assets/img/logo.svg" height="34" alt="logo" /></a>
+        <div class="container">
+          <a class="navbar-brand" href="{{ route('home', ['locale' => app()->getLocale()]) }}">
+          <img src="/icons/logo-black.png" height="34" alt="logo" />
+        </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"> </span></button>
           <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base align-items-lg-center align-items-start">
-              <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#service">Services</a></li>
-              <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#destination">Destination</a></li>
-              <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#booking">Booking</a></li>
-              <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#testimonial">Testimonial</a></li>
               <li class="nav-item px-3 px-xl-4">
-                <a class="btn btn-outline-dark order-1 order-lg-0 fw-medium" href="{{ route('login') }}">
+                <a class="nav-link fw-medium" aria-current="page" href="#service">Services</a>
+              </li>
+              <li class="nav-item px-3 px-xl-4">
+                <a class="nav-link fw-medium" aria-current="page" href="#destination">Destination</a>
+              </li>
+              <li class="nav-item px-3 px-xl-4">
+                <a class="nav-link fw-medium" aria-current="page" href="#booking">Comment ?</a>
+              </li>
+              <li class="nav-item px-3 px-xl-4">
+                <a class="nav-link fw-medium" aria-current="page" href="#testimonial">Témoignages</a>
+              </li>
+              <li class="nav-item px-3 px-xl-4">
+                <a class="btn btn-outline-dark order-1 order-lg-0 fw-medium" data-bs-toggle="modal" data-bs-target="#popupVideo">
                     Connexion
                 </a>
             </li>
@@ -102,6 +113,17 @@
           </div>
         </div>
       </nav>
+
+
+      <div class="modal fade" id="popupVideo" tabindex="-1" aria-labelledby="popupVideo" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content" style="border-radius: 5px !important;">
+            @livewire('Front.Login')
+          </div>
+        </div>
+      </div>
+
+
       <section style="padding-top: 7rem;">
         <div class="bg-holder" style="background-image:url(assets/img/hero/hero-bg.svg);">
         </div>
@@ -122,14 +144,6 @@
                 <a class="btn btn-primary btn-lg me-md-4 mb-3 mb-md-0 border-0 primary-btn-shadow" href="#!" role="button">
                     Démarrer Maintenant !
                 </a>
-                <div class="w-100 d-block d-md-none"></div><a href="#!" role="button" data-bs-toggle="modal" data-bs-target="#popupVideo"><span class="btn btn-danger round-btn-lg rounded-circle me-3 danger-btn-shadow"> <img src="/front/assets/img/hero/play.svg" width="15" alt="paly"/></span></a><span class="fw-medium">Play Demo</span>
-                <div class="modal fade" id="popupVideo" tabindex="-1" aria-labelledby="popupVideo" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered modal-lg">
-                    <div class="modal-content">
-                      <iframe class="rounded" style="width:100%;max-height:500px;" height="500px" src="https://www.youtube.com/embed/_lhdhL4UDIo" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -441,7 +455,8 @@
 
         <div class="container">
           <div class="row">
-            <div class="col-lg-3 col-md-7 col-12 mb-4 mb-md-6 mb-lg-0 order-0"> <img class="mb-4" src="/front/assets/img/logo2.svg" width="150" alt="jadoo" />
+            <div class="col-lg-3 col-md-7 col-12 mb-4 mb-md-6 mb-lg-0 order-0">
+              <img class="mb-4" src="/icons/logo-black.png" width="150" alt="Tn Sponsoring" />
               <p class="fs--1 text-secondary mb-0 fw-medium">
                 L'unique service tunisien qui vous donne la possibilité de faire vous sponsorisation sans carte.
               </p>
@@ -489,7 +504,7 @@
 
       <div class="py-5 text-center">
         <p class="mb-0 text-secondary fs--1 fw-medium">
-            All rights reserved@tunisia-sponsoring.site  
+            All rights reserved. 
         </p>
       </div>
     </main>

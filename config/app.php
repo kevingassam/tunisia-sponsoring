@@ -18,7 +18,6 @@ return [
     'name' => env('APP_NAME', 'Laravel'),
     'auteur_url' => env('APP_AUTEUR_URL', 'Laravel auteur'),
     'auteur' => env('APP_AUTEUR', 'Laravel url'),
-    'url' => env('APP_URL', ''),
 
     /*
     |--------------------------------------------------------------------------
@@ -85,7 +84,8 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'fr',
+    'available_locales' => ['fr', 'ar'], 
 
     /*
     |--------------------------------------------------------------------------
@@ -98,7 +98,7 @@ return [
     |
     */
 
-    'fallback_locale' => 'en',
+    'fallback_locale' => 'fr',
 
     /*
     |--------------------------------------------------------------------------
@@ -111,7 +111,7 @@ return [
     |
     */
 
-    'faker_locale' => 'en_US',
+    'faker_locale' => 'fr_FR',
 
     /*
     |--------------------------------------------------------------------------
