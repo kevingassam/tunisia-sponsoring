@@ -21,7 +21,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/icons/icon.png">
     <link rel="shortcut icon" type="image/x-icon" href="/icons/icon.png">
     <link rel="manifest" href="/front/assets/img/favicons/manifest.json">
-    <meta name="msapplication-TileImage" content="/front/assets/img/favicons/mstile-150x150.png">
+    <meta name="msapplication-TileImage" content="/icons/icon.png">
     <meta name="theme-color" content="#ffffff">
 
 
@@ -45,16 +45,16 @@
     <meta property="og:title" content="TUnisia Sponsoring TN - Sponsorisation des Pages en Tunisie">
     <meta property="og:description"
         content="TUnisia Sponsoring TN permet la sponsorisation de vos pages et contenus sur diverses plateformes sans carte en Tunisie. Nous gérons les paiements pour vous.">
-    <meta property="og:image" content="URL_de_votre_image_de_partage">
+    <meta property="og:image" content="/icons/icon.png">
     <meta property="og:url" content="tTunisia-sponsoring.site">
     <meta property="og:type" content="website">
 
     <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="/icons/logo-white.png">
     <meta name="twitter:title" content="TUnisia Sponsoring TN - Sponsorisation des Pages en Tunisie">
     <meta name="twitter:description"
         content="TUnisia Sponsoring TN permet la sponsorisation de vos pages et contenus sur diverses plateformes sans carte en Tunisie. Nous gérons les paiements pour vous.">
-    <meta name="twitter:image" content="URL_de_votre_image_de_partage">
+    <meta name="twitter:image" content="/icons/logo-white.png">
 
     <!-- Author -->
     <meta name="author" content="TUnisia Sponsoring TN">
