@@ -71,14 +71,6 @@
     <!-- Canonical Link -->
     <link rel="canonical" href="Tunisia-sponsoring.site">
 
-    @if (app()->getLocale() == 'ar')
-        <style>
-            body {
-                direction: rtl !important;
-            }
-        </style>
-    @endif
-
 </head>
 
 
@@ -193,51 +185,53 @@
                 <div class="position-absolute z-index--1 end-0 d-none d-lg-block"><img
                         src="/front/assets/img/category/shape.svg" style="max-width: 200px" alt="service" /></div>
                 <div class="mb-7 text-center">
-                    <h5 class="text-secondary">CATEGORY </h5>
-                    <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">We Offer Best Services</h3>
+                    <h5 class="text-secondary">NOS SERVICES </h5>
+                    <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">
+                      Nous offrons les meilleurs services
+                    </h3>
                 </div>
+               
+
+
                 <div class="row">
-                    <div class="col-lg-3 col-sm-6 mb-6">
-                        <div class="card service-card shadow-hover rounded-3 text-center align-items-center">
-                            <div class="card-body p-xxl-5 p-4"> <img src="/front/assets/img/category/icon1.png"
-                                    width="75" alt="Service" />
-                                <h4 class="mb-3">Calculated Weather</h4>
-                                <p class="mb-0 fw-medium">Built Wicket longer admire do barton vanity itself do in it.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 mb-6">
-                        <div class="card service-card shadow-hover rounded-3 text-center align-items-center">
-                            <div class="card-body p-xxl-5 p-4"> <img src="/front/assets/img/category/icon2.png"
-                                    width="75" alt="Service" />
-                                <h4 class="mb-3">Best Flights</h4>
-                                <p class="mb-0 fw-medium">Engrossed listening. Park gate sell they west hard for the.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 mb-6">
-                        <div class="card service-card shadow-hover rounded-3 text-center align-items-center">
-                            <div class="card-body p-xxl-5 p-4"> <img src="/front/assets/img/category/icon3.png"
-                                    width="75" alt="Service" />
-                                <h4 class="mb-3">Local Events</h4>
-                                <p class="mb-0 fw-medium">Barton vanity itself do in it. Preferd to men it engrossed
-                                    listening.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 mb-6">
-                        <div class="card service-card shadow-hover rounded-3 text-center align-items-center">
-                            <div class="card-body p-xxl-5 p-4"> <img src="/front/assets/img/category/icon4.png"
-                                    width="75" alt="Service" />
-                                <h4 class="mb-3">Customization</h4>
-                                <p class="mb-0 fw-medium">We deliver outsourced aviation services for military
-                                    customers</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                  <div class="col-lg-3 col-sm-6 mb-6">
+                      <div class="card service-card shadow-hover rounded-3 text-center align-items-center">
+                          <div class="card-body p-xxl-5 p-4">
+                              <img src="/icons/icons8-promotion.gif" width="40" alt="Service" />
+                              <h4 class="mb-3">Sponsorisation</h4>
+                              <p class="mb-0 fw-medium">Profitez de nos services de sponsorisation pour maximiser la visibilité de votre marque sur les plateformes de médias sociaux.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 mb-6">
+                      <div class="card service-card shadow-hover rounded-3 text-center align-items-center">
+                          <div class="card-body p-xxl-5 p-4">
+                              <img src="/icons/icons8-netflix.gif" width="40" alt="Service" />
+                              <h4 class="mb-3">Achat de Services</h4>
+                              <p class="mb-0 fw-medium">Accédez facilement à une variété de services en ligne pour améliorer vos projets et répondre à vos besoins spécifiques.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 mb-6">
+                      <div class="card service-card shadow-hover rounded-3 text-center align-items-center">
+                          <div class="card-body p-xxl-5 p-4">
+                              <img src="/icons/icons8-achat.gif" width="40" alt="Service" />
+                              <h4 class="mb-3">Achat en Ligne</h4>
+                              <p class="mb-0 fw-medium">Effectuez vos achats en ligne de manière simple et sécurisée, et recevez vos produits directement chez vous.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 mb-6">
+                      <div class="card service-card shadow-hover rounded-3 text-center align-items-center">
+                          <div class="card-body p-xxl-5 p-4">
+                              <img src="/icons/icons8-tic-tac.gif" width="40" alt="Service" />
+                              <h4 class="mb-3">Autres Services</h4>
+                              <p class="mb-0 fw-medium">Découvrez nos autres services personnalisés pour répondre à toutes vos exigences en matière de sponsoring et plus encore.</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              
             </div><!-- end of .container-->
 
         </section>
