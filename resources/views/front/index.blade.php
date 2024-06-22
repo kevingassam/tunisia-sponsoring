@@ -70,6 +70,14 @@
 
     <!-- Canonical Link -->
     <link rel="canonical" href="Tunisia-sponsoring.site">
+    
+    @if (app()->getLocale() == "ar")
+        <style>
+          .arabe{
+            direction: rtl !important;
+          }
+        </style>
+    @endif
 
 </head>
 
@@ -104,10 +112,10 @@
                         <li class="nav-item px-3 px-xl-4">
                             <a class="nav-link fw-medium" aria-current="page" href="#testimonial">Témoignages</a>
                         </li>
-                        <li class="nav-item px-3 px-xl-4">
+                        <li class="nav-item px-3 px-xl-4 arabe">
                             <a class="btn btn-outline-dark order-1 order-lg-0 fw-medium" data-bs-toggle="modal"
                                 data-bs-target="#popupVideo">
-                                Connexion
+                                {{ __('message.btn_login') }}
                             </a>
                         </li>
                         <li class="nav-item dropdown px-3 px-lg-0">
@@ -157,19 +165,20 @@
                     <div class="col-md-5 col-lg-6 order-0 order-md-1 text-end">
                       <img class="pt-7 pt-md-0 hero-img"
                             src="/icons/hero-img.webp" alt="hero-header" /></div>
-                    <div class="col-md-7 col-lg-6 text-md-start text-center py-6">
-                        <h4 class="fw-bold text-danger mb-3">
+                    <div class="col-md-7 col-lg-6 text-md-start text-center py-6  arabe ">
+                        <h4 class="fw-bold text-danger mb-3 arabe">
                             {{ __('message.welcome_message') }}
                         </h4>
-                        <h1 class="hero-title">Une, carte de sponsorisation unique !</h1>
+                        <h1 class="hero-title">
+                          {{ __('message.big_intro') }}
+                        </h1>
                         <p class="mb-4 fw-medium">
-                            TUnisia Sponsoring TN permet la sponsorisation de vos pages et contenus sur diverses
-                            plateformes sans carte en Tunisie. Nous gérons les paiements pour vous.
+                          {{ __('message.intro') }}
                         </p>
                         <div class="text-center text-md-start">
                             <a class="btn btn-primary btn-lg me-md-4 mb-3 mb-md-0 border-0 primary-btn-shadow"
                                 href="#!" role="button">
-                                Démarrer Maintenant !
+                                {{ __('message.start_now') }}
                             </a>
                         </div>
                     </div>
