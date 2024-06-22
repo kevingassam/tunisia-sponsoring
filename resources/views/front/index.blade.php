@@ -103,10 +103,20 @@
                 </a>
             </li>
               <li class="nav-item dropdown px-3 px-lg-0">
-                <a class="d-inline-block ps-0 py-2 pe-3 text-decoration-none dropdown-toggle fw-medium" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">FR</a>
+                <a class="d-inline-block  text-uppercase ps-0 py-2 pe-3 text-decoration-none dropdown-toggle fw-medium" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  {{ app()->getLocale() }}
+                </a>
                 <ul class="dropdown-menu dropdown-menu-end border-0 shadow-lg" style="border-radius:0.3rem;" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#!">FR</a></li>
-                  <li><a class="dropdown-item" href="#!">AR</a></li>
+                  <li>
+                    <a class="dropdown-item" onclick="document.location.href='{{ route('home', ['locale' => 'fr']) }}'">
+                      FR
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" onclick="document.location.href='{{ route('home', ['locale' => 'ar']) }}'">
+                      AR
+                    </a>
+                  </li>
                 </ul>
               </li>
             </ul>
@@ -134,7 +144,7 @@
             <div class="col-md-5 col-lg-6 order-0 order-md-1 text-end"><img class="pt-7 pt-md-0 hero-img" src="/front/assets/img/hero/hero-img.png" alt="hero-header" /></div>
             <div class="col-md-7 col-lg-6 text-md-start text-center py-6">
               <h4 class="fw-bold text-danger mb-3">
-                Sponsorisation sans Carte !
+                {{ __('message.welcome_message') }}
               </h4>
               <h1 class="hero-title">Une, carte de sponsorisation unique !</h1>
               <p class="mb-4 fw-medium">
